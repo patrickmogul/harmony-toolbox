@@ -413,7 +413,7 @@ def safety_defaults() -> None:
                 return
             except subprocess.CalledProcessError as e:
                 print(
-                    f"* Well this is odd, somehow harmony was not found.\n*\n* You can add the HARMONY_DIR variable to your ~/.easynode.env file\n* Example default location: HARMONY_DIR = /home/serviceharmony/harmony\n*\n* Or contact Easy Node for custom configuration help.\* Error: {e}"
+                    f"* Well this is odd, somehow harmony was not found.\n*\n* You can add the HARMONY_DIR variable to your ~/.servproto.env file\n* Example default location: HARMONY_DIR = /home/serviceharmony/harmony\n*\n* Or contact Easy Node for custom configuration help.\* Error: {e}"
                 )
                 raise SystemExit(0)
         else:

@@ -2,7 +2,7 @@ import socket, requests, json
 from os import environ, path
 from dotenv import load_dotenv
 
-load_dotenv(f"{path.expanduser('~')}/.easynode.env")
+load_dotenv(f"{path.expanduser('~')}/.servproto.env")
 
 
 def get_url(timeout=5) -> str:
@@ -28,7 +28,7 @@ class EnvironmentVariables:
     easy_version = "1.2.3"
     server_host_name = socket.gethostname()
     user_home_dir = path.expanduser("~")
-    dotenv_file = f"{user_home_dir}/.easynode.env"
+    dotenv_file = f"{user_home_dir}/.servproto.env"
     active_user = path.split(user_home_dir)[-1]
     harmony_dir = environ.get("HARMONY_DIR") or f"{user_home_dir}/harmony"
     bls_key_file = path.join(harmony_dir, "blskey.pass")
