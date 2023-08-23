@@ -625,18 +625,8 @@ def check_space_requirements(shard: int, directory: str) -> bool:
 
 def get_shard_menu() -> None:
     if not environ.get("SHARD"):
-        print(f"{string_stars()}\n* Gathering more information about your server.\n{string_stars()}")
-        print(f"* Which shard do you want this node to sign blocks on?\n{string_stars()}")
-        menu_options = [
-            "[0] - Shard 0",
-            "[1] - Shard 1",
-            "[2] - Shard 2",
-            "[3] - Shard 3",
-        ]
-        terminal_menu = TerminalMenu(menu_options, title="* Which Shard will this node sign blocks on? ")
-        our_shard = int(terminal_menu.show())
-
-        set_var(EnvironmentVariables.dotenv_file, "SHARD", str(our_shard))
+        our_shard = "0"
+        set_var(EnvironmentVariables.dotenv_file, "SHARD", our_shard)
         return our_shard
 
 
