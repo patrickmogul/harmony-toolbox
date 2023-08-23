@@ -1048,21 +1048,10 @@ def clone_shards():
     # Move to ~/harmony
     os.chdir(f"{environ.get('HARMONY_DIR')}")
 
-    if environ.get("SHARD") != "0":
-        # If we're not on shard 0, download the numbered shard DB here.
-        print(f"* Now cloning shard {environ.get('SHARD')}\n{string_stars()}")
-        run_command(
-            f"rclone -P sync release:pub.harmony.one/{environ.get('NETWORK')}.min/harmony_db_{environ.get('SHARD')} {environ.get('HARMONY_DIR')}/harmony_db_{environ.get('SHARD')} --multi-thread-streams 4 --transfers=32"
-        )
-        print(
-            f"{string_stars()}\n* Shard {environ.get('SHARD')} completed.\n* Shard 0 will be created when you start your service.\n{string_stars()}"
-        )
-    else:
-        # If we're on shard 0, grab the snap DB here.
-        print(f"* Now cloning Shard 0, kick back and relax for awhile...\n{string_stars()}")
-        run_command(
-            f"rclone -P -L --checksum sync release:pub.harmony.one/{environ.get('NETWORK')}.snap/harmony_db_0 {environ.get('HARMONY_DIR')}/harmony_db_0 --multi-thread-streams 4 --transfers=32"
-        )
+    print(f"* No database yet, making harmony_db_0...\n{string_stars()}")
+    run_command(
+        f"mkdir -p {environ.get('HARMONY_DIR')}/harmony_db_0"
+    )
 
 
 def finish_node_install():
