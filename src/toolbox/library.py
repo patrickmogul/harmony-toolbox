@@ -59,24 +59,33 @@ def loader_intro():
     print(Fore.GREEN)
     print_stars()
     p = """
-                    ____ ____ ____ ____ _________ ____ ____ ____ ____           
-                    ||E |||a |||s |||y |||       |||N |||o |||d |||e ||          
-                    ||__|||__|||__|||__|||_______|||__|||__|||__|||__||          
-                    |/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|          
-                ____ ____ ____ ____ ____ ____ ____ _________ ____ ____ ____ 
-                ||H |||a |||r |||m |||o |||n |||y |||       |||O |||N |||E ||
-                ||__|||__|||__|||__|||__|||__|||__|||_______|||__|||__|||__||
-                |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/_______\|/__\|/__\|/__\|
-                        ____ ____ ____ ____ ____ ____ ____ ____ ____                
-                        ||V |||a |||l |||i |||d |||a |||t |||o |||r ||               
-                        ||__|||__|||__|||__|||__|||__|||__|||__|||__||               
-                        |/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|/__\|               
-                            ____ ____ ____ ____ ____ ____ ____                          
-                            ||T |||o |||o |||l |||b |||o |||x ||                         
-                            ||__|||__|||__|||__|||__|||__|||__||                         
-                            |/__\|/__\|/__\|/__\|/__\|/__\|/__\|   
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄               ▄                                               
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌             ▐░▌                                              
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌ ▐░▌           ▐░▌                                               
+▐░▌          ▐░▌          ▐░▌       ▐░▌  ▐░▌         ▐░▌                                                
+▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌   ▐░▌       ▐░▌                                                 
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌    ▐░▌     ▐░▌                                                  
+ ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀      ▐░▌   ▐░▌                                                   
+          ▐░▌▐░▌          ▐░▌     ▐░▌        ▐░▌ ▐░▌                                                    
+ ▄▄▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌      ▐░▌        ▐░▐░▌                                                     
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌        ▐░▌                                                      
+ ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀          ▀                                                       
+                                                                                                        
+ ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄           
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌          
+▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌ ▀▀▀▀█░█▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀▀▀▀█░▌▐░▌          
+▐░▌       ▐░▌▐░▌       ▐░▌▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌          
+▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌          
+▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌          
+▐░█▀▀▀▀▀▀▀▀▀ ▐░█▀▀▀▀█░█▀▀ ▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌          
+▐░▌          ▐░▌     ▐░▌  ▐░▌       ▐░▌     ▐░▌     ▐░▌       ▐░▌▐░▌          ▐░▌       ▐░▌▐░▌          
+▐░▌          ▐░▌      ▐░▌ ▐░█▄▄▄▄▄▄▄█░▌     ▐░▌     ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░█▄▄▄▄▄▄▄█░▌▐░█▄▄▄▄▄▄▄▄▄ 
+▐░▌          ▐░▌       ▐░▌▐░░░░░░░░░░░▌     ▐░▌     ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌
+ ▀            ▀         ▀  ▀▀▀▀▀▀▀▀▀▀▀       ▀       ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀ 
+                                                                                                        
     """
     print(p)
+    return
 
 
 def old_toolbox_check():
@@ -184,9 +193,13 @@ def update_harmony_binary():
     update_text_file(f"{harmony_dir}/harmony.conf", " DisablePrivateIPScan = false", " DisablePrivateIPScan = true")
     if os.path.isfile(f"{harmony_dir}/blskey.pass"):
         update_text_file(f"{harmony_dir}/harmony.conf", 'PassFile = ""', 'PassFile = "blskey.pass"')
-        print(f"* Harmony binary installed, {harmony_dir}/harmony.conf created and modified: 13 max keys, blskey.pass file, disabled private ip scan. ")
+        print(
+            f"* Harmony binary installed, {harmony_dir}/harmony.conf created and modified: 13 max keys, blskey.pass file, disabled private ip scan. "
+        )
     else:
-        print(f"* Harmony binary installed, {harmony_dir}/harmony.conf created and modified: 13 max keys, disabled private ip scan. ")
+        print(
+            f"* Harmony binary installed, {harmony_dir}/harmony.conf created and modified: 13 max keys, disabled private ip scan. "
+        )
     return
 
 
@@ -612,13 +625,17 @@ def check_space_requirements(shard: int, directory: str) -> bool:
         if not os.listdir(directory):
             shutil.rmtree(f"{directory}")
         os.remove(f"{EnvironmentVariables.user_home_dir}/.servproto.env")
-        input(f"* Warning: There is not enough space to load shard 0 into {directory}.\n* Restart the toolbox and select a volume with more free space when prompted on the install location.\n* Press ENTER to quit.")
+        input(
+            f"* Warning: There is not enough space to load shard 0 into {directory}.\n* Restart the toolbox and select a volume with more free space when prompted on the install location.\n* Press ENTER to quit."
+        )
         raise SystemExit(0)
     elif shard in [1, 2, 3] and available_space < 50:
         if not os.listdir(directory):
             shutil.rmtree(f"{directory}")
         os.remove(f"{EnvironmentVariables.user_home_dir}/.servproto.env")
-        input(f"* Warning: There is not enough space to load shard {shard} into {directory}.\n* Restart the toolbox and select a volume with more free space when prompted on the install location.\n* Press ENTER to quit.")
+        input(
+            f"* Warning: There is not enough space to load shard {shard} into {directory}.\n* Restart the toolbox and select a volume with more free space when prompted on the install location.\n* Press ENTER to quit."
+        )
         raise SystemExit(0)
     return True
 
@@ -821,7 +838,6 @@ def check_online_version():
         return
 
 
-
 def first_env_check(env_file) -> None:
     first_time = load_var_file(env_file)
     return first_time
@@ -836,8 +852,12 @@ def version_checks(harmony_folder):
     software_versions["hmy_version"] = local_versions[1] if local_versions else "Offline"
 
     # Check if the online versions exist. If not, set to a default value.
-    software_versions["online_harmony_version"] = environ.get("ONLINE_HARMONY_VERSION") if environ.get("ONLINE_HARMONY_VERSION") else "Offline"
-    software_versions["online_hmy_version"] = environ.get("ONLINE_HMY_VERSION") if environ.get("ONLINE_HMY_VERSION") else "Offline"
+    software_versions["online_harmony_version"] = (
+        environ.get("ONLINE_HARMONY_VERSION") if environ.get("ONLINE_HARMONY_VERSION") else "Offline"
+    )
+    software_versions["online_hmy_version"] = (
+        environ.get("ONLINE_HMY_VERSION") if environ.get("ONLINE_HMY_VERSION") else "Offline"
+    )
 
     # Check versions, if matching False (No Upgrade Required), non-match True (Upgrade Required)
     if (
@@ -978,11 +998,11 @@ def install_harmony() -> None:
     # Create the directory if not exists, and set ownership
     process_command(f"sudo mkdir -p {install_path}")
     process_command(f"sudo chown {EnvironmentVariables.active_user} {install_path}")
-    
+
     # Check space requirements for the selected shard
-    shard_value = int(environ.get('SHARD'))
+    shard_value = int(environ.get("SHARD"))
     check_space_requirements(shard_value, install_path)
-    
+
     print(f"{string_stars()}\n* Creating all Harmony Files & Folders")
     process_command(f"mkdir -p {install_path}/.hmy/blskeys")
 
@@ -1049,9 +1069,7 @@ def clone_shards():
     os.chdir(f"{environ.get('HARMONY_DIR')}")
 
     print(f"* No database yet, making harmony_db_0...\n{string_stars()}")
-    run_command(
-        f"mkdir -p {environ.get('HARMONY_DIR')}/harmony_db_0"
-    )
+    run_command(f"mkdir -p {environ.get('HARMONY_DIR')}/harmony_db_0")
 
 
 def finish_node_install():

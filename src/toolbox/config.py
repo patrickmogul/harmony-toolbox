@@ -41,6 +41,7 @@ class EnvironmentVariables:
     password_path = path.join(harmony_dir, "passphrase.txt")
     external_ip = get_url()
     main_menu_regular = path.join(toolbox_location, "src", "messages", "regularmenu.txt")
+    # Update endpoints for SERV
     rpc_endpoints = ["https://api.s0.t.hmny.io", "https://api.harmony.one", "https://rpc.ankr.com/harmony"]
     rpc_endpoints_max_connection_retries = 10
     hmy_tmp_path = "/tmp/hmy"
